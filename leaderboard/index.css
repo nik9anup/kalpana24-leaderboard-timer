@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* > * {
+    font-family: "Poppins", cursive;
+    margin: 0;
+}
+
+:root{
+    --color-dark: #481424;
+    --color-light: #F3F3F2;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    text-align: center;
+}
+
+.board .leaderboard{
+    margin-bottom: 1em;
+    color:#F3F3F2
+}
+
+.board .duration{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.board .duration > button{
+    border: 1px solid var(--color-light);
+    padding: .5em 2em;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.board .duration > button:hover{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.active{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#profile{
+    margin-top: 3em;
+}
+
+#profile .flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    text-align: left;
+    margin-bottom: 2em;
+    border: 3px solid var(--color-dark);
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#profile .flex:hover {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#profile .flex:last-child {
+    margin-bottom: 0;
+}
+
+#profile .flex.header {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-weight: bold;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 32px;
+}
+
+#profile .flex .item {
+    display: flex;
+    align-items: center;
+    color: #F3F3F2;
+    justify-content: space-between;
+    margin-right: auto;
+}
+
+#profile .flex img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+#profile .flex .info{
+    padding: 1em;
+}
+
+.text-dark{
+    color: white;
+}
+
+#profile .flex .item:first-child {
+    flex: 0 0 20%; /* Set a fixed width for the first column */
+}
