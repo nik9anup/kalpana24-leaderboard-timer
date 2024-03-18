@@ -6,3 +6,5 @@ Tech Stack:
 Front-end: HTML, CSS, JS
 Database: MongoDB
 Backend: ExpressJS + NodeJS
+
+Note: For full website, checkout https://github.com/IEEE-PESIT-Student-Branch/kalpana2024
